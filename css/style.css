@@ -277,12 +277,37 @@ flex-wrap: wrap;
     /* flex-direction: row; */
     gap: 18px;
     justify-content: center;
-    /* position: relative; */
-    width: 100%;
+    position: relative;
+    width: 165vw;
     align-items: center;
+    
 
     
 }
+
+.left{
+    position:absolute ;
+    color: gray;
+    font-size: 50px;
+    background: #dfd9d9;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   left: 55%;
+   border-radius: 50px;
+}
+.right{
+    position:absolute ;
+    color: gray;
+    font-size: 50px;
+    background: #dfd9d9;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    left: 3%;
+    border-radius: 50px;
+}
+
 .men-item div.classic-spring{
     width: 400px;
     height: 500px;
