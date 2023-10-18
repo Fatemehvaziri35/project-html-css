@@ -295,6 +295,7 @@ flex-wrap: wrap;
     align-items: center;
    left: 55%;
    border-radius: 50px;
+   transform: translateY(-50%);
 }
 .right{
     position:absolute ;
