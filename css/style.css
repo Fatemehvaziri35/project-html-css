@@ -12,6 +12,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
      overflow-x: hidden;
      height: 3000px;
+     
     
 }
 /* start header */
@@ -20,17 +21,23 @@ body{
     padding: 30px 50px;
     margin-left: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .header-sticky{
     position: absolute;
     border-bottom: 2px rgb(170, 167, 167) dotted;
-    height: 120px;
+    height: 90px;
     z-index: 200;
     position: fixed;
     background-color: #f8f8f8;
    
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     
 
@@ -41,7 +48,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px;
-    margin-left: 180px;
+    margin-left: 100px;
     margin-top: 10px; 
     
 }
@@ -113,15 +120,75 @@ padding-left: 25px;
     justify-content: center;
     display: flex;
 }
+.menu-hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #D2E0FB;
+    width: 40vh;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-radius: 10px;
+    visibility: hidden; 
+    opacity: 0;
+    top: 14%;
+    right:0;
+}
+.menu-hamburger ul{
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+   
+  
+
+}
+.menu-hamburger ul li a{
+    font-size: 1.2em;
+    
+    color: black;
+}
+.menu-hamburger ul li a:hover{
+    color: #186F65;
+    font-size: 1.3em;
+}
+.active-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.menu2{
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    font-size: 2.5em;
+    border: none;
+    border-radius: 50px;
+    visibility: hidden;
+    opacity: 0;
+    background-color:#D2E0FB;
+    cursor: pointer;
+
+}
 /* end header */
 /* start main */
 .mainbanner{
     border-bottom: 2px rgb(170, 167, 167) dotted;
-    padding: 180px 0px 600px  20px;
-    display: flex;
+   
     gap: 10px;
-    height: 100vh;
+    height: 140vh;
     margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 100px;
     
     
 }
@@ -136,6 +203,9 @@ padding-left: 25px;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .leftcontect .innercontect h4{
@@ -166,11 +236,7 @@ flex-wrap: wrap;
 
 
 }
-.rightcontect .firstrightimg .main img{
-   
 
-    
-}
 .rightcontect .firstrightimg .main .innercontect{
     position: absolute;
     text-align: center;
@@ -205,143 +271,141 @@ flex-wrap: wrap;
     height: 500px;
 }
 
-.men-item div.classic-spring:hover > div.img > div.icon {
-    transform: translateY(0px);
-    visibility: visible;
-    opacity: 1;
-}
-.men-item div.classic-spring > div.img > div.icon > ul{
-    display: flex;
-    gap: 10px;
-}
-.men-item div.classic-spring > div.img > div.icon > ul > li{
-    display: flex;
-    padding: 14px 18px;
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-.men-item div.classic-spring > div.img > div.icon > ul > li > a{
-    color: black;
-}
-.men-item div.classic-spring > div.content{
-    width: 100%;
-    height:17%;
-}
-.men-item div.classic-spring > div.content > div.content-top{
-    display: flex;
-    width: 100%;
-    height: 50%;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 0 8px; */
-}
-.men-item div.classic-spring > div.content > div.content-top > h4{
-    font-size: 24px;
-    font-weight: bold;
-}
-.men-item div.classic-spring > div.content > div.content-top > ul{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-.men-item div.classic-spring > div.content > div.content-bottom{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    /* padding: 0 10px; */
-    color: rgb(90, 90, 90);
-    font-size: 20px;
-    /* justify-content: center; */
-}#men{
-    /* padding-left: 100px; */
-    margin-top: 100px;
-    border-bottom: 2px rgb(170, 167, 167) dotted; ;
-    width: 100%;
-    
-    
-
-}
-#men h2{
-    font-size: 40px;
-    margin-bottom: 10px;
-    
-}
-#men p{
-    color: #847c7c;
-    font-style:italic ;
-    margin-bottom: 60px;
-}
-.men-item{
-    display: flex;
-    /* flex-direction: row; */
-    gap: 18px;
-    justify-content: center;
-    position: relative;
-    width: 165vw;
-    align-items: center;
-    
-
-    
-}
-
-.left{
-    position:absolute ;
-    color: gray;
-    font-size: 50px;
-    background: #dfd9d9;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-   left: 55%;
-   border-radius: 50px;
-   transform: translateY(-50%);
-}
-.right{
-    position:absolute ;
-    color: gray;
-    font-size: 50px;
-    background: #dfd9d9;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    left: 3%;
-    border-radius: 50px;
-}
-
-.men-item div.classic-spring{
-    width: 400px;
-    height: 500px;
-    position: relative;
-    
-}
-
-.men-item div.classic-spring > div.img{
-    width: 100%;
-    height: 83%;
-    overflow: hidden;
-}
-
-.men-item div.classic-spring > div.img > div.image{
+.swiper {
     width: 100%;
     height: 100%;
-    position: relative;
-}
-.men-item div.classic-spring > div.img >div.image > img{
-    width: 100%;
-    height: 100%;
+  }
 
-}
+  .swiper-slide {
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
 
-.men-item div.classic-spring > div.img > div.icon{
-    position: absolute;
-    top: 62%;
-    left: 30%;
-    transform: translateY(110px);
-    visibility: hidden;
-    opacity: 0;
-    transition: all .6s;
-}
+
+  .classic-spring:hover > div.img > div.icon {
+      transform: translateY(0px);
+      visibility: visible;
+      opacity: 1;
+    
+  }
+  .classic-spring > div.img > div.icon > ul{
+      display: flex;
+      gap: 10px;
+  }
+  .classic-spring > div.img > div.icon > ul > li{
+      display: flex;
+      padding: 14px 18px;
+      background-color: rgb(255, 255, 255);
+      font-size: 20px;
+  }
+  .classic-spring > div.img > div.icon > ul > li > a{
+      color: black;
+  }
+  .classic-spring > div.content{
+      width: 100%;
+      height:17%;
+  }
+  .classic-spring > div.content > div.content-top{
+      display: flex;
+      width: 90%;
+      height: 50%;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      
+  }
+  .classic-spring > div.content > div.content-top > h4{
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .classic-spring > div.content > div.content-top > ul{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+  }
+  .classic-spring > div.content > div.content-bottom{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 50%;
+      color: rgb(90, 90, 90);
+      font-size: 18px;
+  }#men{
+      margin-top: 50px;
+      border-bottom: 2px rgb(170, 167, 167) dotted; ;
+      width: 100%;
+      
+  }
+  #men h2{
+      font-size: 40px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  #men p{
+      color: #847c7c;
+      font-style:italic ;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .men-item{
+      display: flex;
+      /* flex-direction: row; */
+      gap: 18px;
+      justify-content: center;
+      position: relative;
+      width: 165vw;
+      align-items: center;
+      
+  
+      
+  }
+  
+  .classic-spring{
+      width: 400px;
+      height: 500px;
+      position: relative;
+      
+  }
+  
+  .classic-spring > div.img{
+      width: 90%;
+      height: 80%;
+      overflow: hidden;
+  }
+  
+  .classic-spring > div.img > div.image{
+      width: 100%;
+      height: 100%;
+      position: relative;
+  }
+  .classic-spring > div.img >div.image > img{
+      width: 100%;
+      height: 100%;
+  
+  }
+  
+  .classic-spring > div.img > div.icon{
+      position: absolute;
+      top: 62%;
+      left: 20%;
+      transform: translateY(-50px);
+      visibility: hidden;
+      opacity: 0;
+      transition: all .6s;
+  }
+  
 /* start explore */
 #explore{
     border-bottom: 2px rgb(170, 167, 167) dotted; 
@@ -615,11 +679,30 @@ footer {
 .under-footer ul li i:hover{
     color: #847c7c;
       }
-      @media only screen and (max-width: 600px) {
-        body{
+
+      @media only screen and (max-width: 989px){
+        html,body{
+            overflow-x: hidden;
+           
         }
+        .menu2{
+            opacity: 1;
+            visibility: visible;
+        }
+        .menu{
+            display: none;
+        }
+      }
+@media only screen and (max-width: 900px){
+    
+   
+}
+
+
+      @media only screen and (max-width: 600px) {
+       
         .logo{
-            margin-left: 80px;
+           
         }
         .menu{
             display:none;

@@ -1,9 +1,18 @@
 'use strict'
-document.querySelector('.right').onclick = function(){
-    const widthItem = document.querySelector('.classic-spring').offsetWidth;
-    document.querySelector('.men-item').scrollLeft += widthItem;
-}
-document.querySelector('.left').onclick = function(){
-    const widthItem = document.querySelector('.classic-spring').offsetWidth;
-    document.querySelector('.men-item').scrollLeft -= widthItem;
-}
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+
+const menuHAmburger=document.querySelector('.menu-hamburger')
+const hamburgBtn=document.querySelector('.menu2')
+hamburgBtn.addEventListener('click',()=>{
+    menuHAmburger.classList.toggle('active-menu')
+
+})
